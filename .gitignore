@@ -1,0 +1,4 @@
+.envrc
+*.swp
+*.swo
+.byebug_history

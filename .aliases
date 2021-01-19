@@ -1,0 +1,23 @@
+alias grep='grep -i --color=auto'
+
+alias l="less -ir"
+
+alias ls="ls --color"
+alias ll="ls -lh"
+
+alias glt="git log-tree"
+alias glg="git log -10 --pretty=medium --notes --name-status"
+alias gst="git status"
+alias gc="git commit -v"
+alias gco="git checkout"
+alias gcp="git cherry-pick"
+alias gb="git branch"
+alias ga="git add"
+alias gl="git pull"
+alias gs="git show"
+alias gp="git push"
+
+alias be="bundle exec"
+alias websrv="ruby -run -e httpd . -p 8888"
+
+alias ...=../..

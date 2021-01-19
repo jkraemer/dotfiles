@@ -1,0 +1,20 @@
+[user]
+	name = Jens Kraemer
+	email = jk@jkraemer.net
+	signingkey = 08625A14CE3CDDAA
+[merge]
+	conflictstyle = diff3
+[pull]
+	rebase = true
+[alias]
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	log-tree = log --pretty=oneline --abbrev-commit --graph --decorate
+  save = !sh -c 'export PREV=$(git symbolic-ref HEAD|cut -d/ -f3-) && git checkout -b "$1" && git commit -am "$1" && git checkout "$PREV"' -
+[core]
+	excludesfile = /home/jk/.gitignore
+	autocrlf = false
+[push]
+	default = upstream
+	recurseSubmodules = check
+[color]
+	ui = auto
