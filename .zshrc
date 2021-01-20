@@ -96,6 +96,7 @@ unsetopt rm_star_silent         # ask for confirmation for `rm *' or `rm path/*'
 if [[ -s "/usr/share/powerlevel9k/powerlevel9k.zsh-theme" ]]; then
   source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
   POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+  POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND='green1'
 fi
 
 # aliases
