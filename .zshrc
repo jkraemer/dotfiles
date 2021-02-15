@@ -114,6 +114,12 @@ if [[ -x "/usr/bin/direnv" ]]; then
   eval "$(direnv hook zsh)"
 fi
 
+# fzf
+# https://medium.com/better-programming/boost-your-command-line-productivity-with-fuzzy-finder-985aa162ba5d
+if [[ -s "/usr/share/doc/fzf/examples/key-bindings.zsh" ]]; then
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
+
 #
 # environment
 #
