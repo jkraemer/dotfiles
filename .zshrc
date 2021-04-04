@@ -116,8 +116,9 @@ fi
 
 # fzf
 # https://medium.com/better-programming/boost-your-command-line-productivity-with-fuzzy-finder-985aa162ba5d
-if [[ -s "/usr/share/doc/fzf/examples/key-bindings.zsh" ]]; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh
+if [[ -s "${HOME}/.zsh/fzf-key-bindings.zsh" ]]; then
+  source "${HOME}/.zsh/fzf-key-bindings.zsh"
+  export FZF_COMPLETION_TRIGGER='**'
 fi
 
 #
